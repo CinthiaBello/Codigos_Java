@@ -2159,6 +2159,8 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.egit.ui.IgnoredResourceForegroundColor=157,167,175'
 		'org.eclipse.egit.ui.UncommittedChangeBackgroundColor=25,29,31'
 		'org.eclipse.egit.ui.UncommittedChangeForegroundColor=216,220,223'
+		'org.eclipse.gef.color.list.hover.background=38,34,27'
+		'org.eclipse.gef.color.list.selected.background=21,23,25'
 		'org.eclipse.jdt.ui.ColoredLabels.inherited=143,143,191'
 		'org.eclipse.jdt.ui.ColoredLabels.writeaccess_highlight=255,128,128'
 		'org.eclipse.jdt.ui.Javadoc.backgroundColor=48,54,59'
