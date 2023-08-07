@@ -1,11 +1,11 @@
 package principal;
 
-import java.util.Scanner;
+
 
 public class ImparPar {
 
 	public static void main(String[] args) {
-		Scanner leia = new Scanner(System.in);
+		
 		
 		
 		int numero = 5;
@@ -15,7 +15,7 @@ public class ImparPar {
 		}else {
 			System.out.println("Número impar");
 		}
-		leia.close();
+		
 		
 
 	}
