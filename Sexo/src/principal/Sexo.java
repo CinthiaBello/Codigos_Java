@@ -8,12 +8,17 @@ public class Sexo {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		char sexo = 0;
+		char sexo;
 		
-		System.out.println("Digite o seu sexo: ");
+		System.out.println("Digite o seu sexo (m/f): ");
 		sexo = leia.next().charAt(0);
 		
-		System.out.println("Seu sexo é: " + sexo);
+		if(Character.toLowerCase(sexo) == 'm') {
+			System.out.println("Seu sexo é masculino");
+		}else {
+			System.out.println("Seu sexo é feminino");
+		}
+		
 		
 		leia.close();
 
