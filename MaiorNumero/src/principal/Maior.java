@@ -16,7 +16,7 @@ public class Maior {
 		 System.out.println("Digite o segundo número: ");
 		 numero2 = leia.nextInt();
 		 
-		 System.out.println(Math.max(numero1, numero2));
+		 System.out.println("Maior número é: " + Math.max(numero1, numero2));
 		 
 		 leia.close();
 		 
