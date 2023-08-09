@@ -72,6 +72,8 @@ public class PrintfOperadores {
 		case 1:
 			System.out.println("Domingo");
 			//int novaVariavel = 10;
+			
+
 			break;
 		case 2:
 			System.out.println("Segunda");
