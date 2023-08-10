@@ -31,7 +31,7 @@ public class Tabuada {
 		for(int contador = 0; contador <=10; contador++ ) {
 			if(operador == '+') {
 				resultado = numero + contador;
-				System.out.println("Tabuada:" + numero + operador + contador + "=" + resultado) ;
+				System.out.println("Tábuada:" + numero + operador + contador + "=" + resultado) ;
 			}
 			if(operador == '-') {
 				resultado = numero - contador;
@@ -54,3 +54,27 @@ public class Tabuada {
 
 	}
 }
+
+/*	switch (operador) {
+ 		case '+':
+			for(int contador = 1; contador<=10; contador++){
+				System.out.println("Tabuada:" + numero + " + " + contador + "=" + resultado) ;
+	 	break;
+	 	case '-':
+	 	int aux = numero;
+	 		for(int contador = 1; contador<=10; contador++){
+				System.out.println((aux +contador) + " - " + numero + "=" + ((aux + contador)- numero));
+		break;
+		case '*':
+			for(int contador = 1; contador<=10; contador++){
+				System.out.println("Tabuada:" + numero + " * " + contador + "=" + resultado) ;
+		break;
+		case '/":
+			for(int contador = 1; contador<=10; contador++){
+				System.out.println("Tabuada:" + (numero * contador) + " / " + numero + "=" + (numero * contador/ numero);
+	 	break;
+
+		default:
+		System.out.println("Operação inválida");
+		break;'
+	}*/
