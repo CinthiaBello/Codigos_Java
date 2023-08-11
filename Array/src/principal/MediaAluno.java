@@ -24,7 +24,7 @@ public class MediaAluno {
 			System.out.println(nota);
 		}
 		
-		System.out.println("Sua média: " + ((notas[0] + notas[1] + notas[2] +notas[3])/ 4));
+		System.out.println("Nome: " + nome + ", sua média: " + ((notas[0] + notas[1] + notas[2] +notas[3])/ 4));
 		
 		
 		leia.close();
