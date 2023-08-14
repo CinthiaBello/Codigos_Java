@@ -14,22 +14,24 @@ public class DoisValores {
 		int valor2 = 0;
 		double resultado = 0;
 		
-		
+		//pede e lê o valor 1
 		System.out.println("Digite o primeiro valor: ");
 		valor1 = leia.nextInt();
+		//pede e lê o valor 2
 		System.out.println("Digite o segundo valor: ");
 		valor2 = leia.nextInt();
-		
+		//os valoress não podem ser igual a zero
 		while(valor1 == 0 && valor2 == 0) {
 			System.out.println("Digite números diferente de zero!");
 			System.out.println("Digite o primeiro valor: ");
 			valor1 = leia.nextInt();
 			System.out.println("Digite o segundo valor: ");
 			valor2 = leia.nextInt();
-			
+			//calculo do valor1 e valor2
 			resultado = valor1 / valor2;
 						
 		}
+		//imprime o resultado
 		System.out.println("Resultado: " + resultado);
 		
 		leia.close();
