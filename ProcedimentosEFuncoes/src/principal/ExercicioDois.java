@@ -26,32 +26,17 @@ public class ExercicioDois {
 		 */
 		Scanner leia = new Scanner(System.in);
 		
+		System.out.println("Digite o nome do funcionário:");
+		String nome = leia.next();
 		System.out.println("Digite o seu salário bruto:");
 		double salario = leia.nextDouble();
 		System.out.println("Digite a quantidade de venda: ");
 		double qntVenda = leia.nextDouble();
-		double salarioFinal = 0;
 		
-		if(qntVenda > 20000) {
-			salarioFinal = salarioLiquido(salario) * 0.05;
-			System.out.println("Você teve uma bonificação de 5%!" + salarioFinal);
-			
-		}else
-		if(15000 < qntVenda && qntVenda < 20000 ) {
-			salarioFinal = salarioLiquido(salario) * 0.03;	
-			System.out.println("Você teve uma bonificação de 3%!" + salarioFinal);
-		}else
-		if(10000 < qntVenda && qntVenda < 15000) {
-			salarioFinal = salarioLiquido(salario) * 0.01;
-			System.out.println("Você teve uma bonificação de 1%! " + salarioFinal);
-			
-		}else {
-			System.out.println("Vamos melhorar!Você consegue!");
-		}
-		
+		System.out.println("Funcionário: "+ nome);
 		System.out.println("Seu salário bruto: " + salario);
 		System.out.printf("Seu salário Liquido com os descontos: %.2f" , salarioLiquido(salario) );
-		System.out.printf("\nSeu salário final: %.2f", salarioLiquido(salario)+ salarioFinal);
+		System.out.printf("\nSeu salário final: %.2f", salarioLiquido(salario)+ calcularcomissao(qntVenda));
 		
 		leia.close();
 	}
@@ -66,5 +51,25 @@ public class ExercicioDois {
 		
 		return salarioFinal ;
 		
+	}
+	static double calcularcomissao(double qntVenda) {
+		double salarioFinal = 0;
+		
+		if(qntVenda > 20000) {
+			salarioFinal = qntVenda * 0.05;
+			
+		}else
+		if(15000 < qntVenda && qntVenda < 20000 ) {
+			salarioFinal = qntVenda * 0.03;	
+			
+		}else
+		if(10000 < qntVenda && qntVenda < 15000) {
+			salarioFinal = qntVenda * 0.01;
+			
+			
+		}else {
+			salarioFinal = 0;
+		}
+		return salarioFinal;
 	}
 }

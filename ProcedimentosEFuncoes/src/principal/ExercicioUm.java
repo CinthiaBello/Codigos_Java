@@ -12,14 +12,21 @@ public class ExercicioUm {
 		
 		System.out.println("Digite o valor em real: ");
 		double real = leia.nextDouble();
-		System.out.printf("Convertido para dolar: %.2f ", conversao(real));
+		System.out.printf("Convertido para dolar: %.2f ", conversaodolar(real));
+		System.out.println("Digite o valor em dolar: ");
+		double dolar = leia.nextDouble();
+		System.out.printf("Convertido para real: %.2f ", conversaoreal(dolar));
 		
 		
 		leia.close();
 
 	}
-	static double conversao(double real) {
+	static double conversaodolar(double real) {
 		return real * 4.99;
+		
+	}
+	static double conversaoreal(double dolar) {
+		return dolar/4.99;
 		
 	}
 
