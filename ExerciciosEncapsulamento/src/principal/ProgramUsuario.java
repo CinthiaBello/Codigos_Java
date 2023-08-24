@@ -17,6 +17,8 @@ public class ProgramUsuario {
 		System.out.println("Digite sua senha: ");
 		usuario.setSenha(leia.nextLine());
 		
+		usuario.recebeDados();
+		
 		leia.close();
 
 	}
