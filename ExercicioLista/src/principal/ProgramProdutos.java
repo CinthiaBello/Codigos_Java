@@ -52,13 +52,13 @@ public class ProgramProdutos {
 		System.out.println("Imprimindo ordenadamente por nome: ");
 		Collections.sort(produtos, Comparator.comparing(Produto::getProduto));
 		
-		
-		
 		for (Produto produto: produtos) {
 			System.out.println("Produto: "+ produto.getProduto());
 			System.out.println("Quantidade: "+ produto.getQuantidade());
 			System.out.println("Preço: "+ produto.getPreco());
 		}
+		
+		
 		System.out.println("Imprimindo ordenadamente por quantidade: ");
 		Collections.sort(produtos, Comparator.comparing(Produto::getQuantidade));
 		
